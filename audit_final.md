@@ -2,11 +2,13 @@
 
 ## 1. Audit Lighthouse
 
-![alt text](/src/assets/image-audit-final_1.png)
+![synthèse de l'audit Lighthouse](/src/assets/image-audit-final_1.png)
 
-![alt text](/src/assets/image-audit-final_2.png)
+![détail de l'audit Lighthouse](/src/assets/image-audit-final_2.png)
 
-amélioration importante 
+Amélioration importante des performances
+
+
 
 ### Performances
 
@@ -15,8 +17,12 @@ amélioration importante
 
 | Date                | URL                   | Nombre de requêtes | Taille de la page (Ko) | Taille du DOM | GES (gCO2e) | Eau (cl) | EcoIndex | Note |
 |---------------------|-----------------------|--------------------|------------------------|---------------|-------------|----------|----------|------|
-| 10/06/2026 10:31:29 | http://localhost:3000/ | 1467 | 17512  | 140  | 2.10  | 3.15 | 44.99 | D |
+| 10/06/2026 16:24:57 | https://indoor-contacted-injection-mit.trycloudflare.com/ | 5 | 1  | 77  | 1.15  | 1.73 | 92.28 | A |
 
 
 ## 3. Ecoindex.fr
+
+![synthèse du test EcoIndex](./src/assets/ecoindex_synthese_final.png)
+
+![Détail du score](./src/assets/ecoindex_synthese_final.png)
 
