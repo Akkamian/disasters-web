@@ -47,7 +47,8 @@ app.use(
   },
   express.static(path.join(__dirname, 'static'), {
     extensions: ['js', 'css', 'jpg'],
-    maxAge: 0
+    maxAge: '1d',
+    immutable: true
   })
 )
 

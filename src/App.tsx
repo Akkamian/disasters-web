@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Activity,
   Cpu,
@@ -66,7 +66,6 @@ export default function App() {
     rps: 0,
     pl: 0,
   });
-  const [ready, setReady] = useState(false);
 
   const startTime = performance.now();
 
@@ -114,25 +113,13 @@ export default function App() {
       cache: cacheRatio,
       pl: Math.round(performance.now() - startTime),
     }));
-    setReady(true);
   };
 
   useEffect(() => {
-    if (!ready) return;
-
-    requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
     computeStats();
   });
-  }, [ready]);
-
-
-  useEffect(() => {
-    if (document.readyState === "complete") {
-      setReady(true);
-    } else {
-      window.addEventListener("load", () => setReady(true), { once: true });
-    }
-  }, []);
+}, []);
 
   useEffect(() => {
     const loadServerStats = async () => {
@@ -148,16 +135,6 @@ export default function App() {
     };
     loadServerStats();
   }, []);
-
-  if (!ready)
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900">
-        <div className="text-center">
-          <div className="h-24 w-24 rounded-full border-b-2 border-white mx-auto mb-6" />
-          <p className="text-white text-xl font-semibold">Chargement…</p>
-        </div>
-      </div>
-    );
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
@@ -217,7 +194,7 @@ export default function App() {
           <Card
             icon={<FilePlus className="w-8 h-8 text-sky-400" />}
             title="CSS"
-            value={`${(stats.img / 1024).toFixed(1)} kB`}
+            value={`${(stats.css / 1024).toFixed(1)} kB`}
             tone={color(stats.css, limits.css)}
           />
           <Card
