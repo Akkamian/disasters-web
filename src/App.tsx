@@ -152,7 +152,7 @@ export default function App() {
           onClick={() => {
             computeStats();
           }}
-          className="bg-white/10 hover:bg-white/20 text-white py-2 px-4 rounded-lg mb-8 transition"
+          className="bg-white/10 hover:bg-white/20 text-white py-2 px-4 rounded-lg mb-8 transition align-self-end"
         >
           Actualiser les statistiques
         </button>
