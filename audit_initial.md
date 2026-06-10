@@ -20,14 +20,14 @@ En conséquence le score SpeedIndex est de zero
 Total blocking time (TBT) = 4010ms.  la page est donc bloquée et ne peut répondre aux entrées utilisateurs durant environ 1,5 secondes au total.
 Cet indicateur indique un cumul important de blocking time et donc des taches trop longues (+ de 50ms)
 
-Actions de résolution possibles : excecution javascript inutile.
+Actions de résolution possibles : execution javascript inutile.
 
 
 ## 2. Audit greenIt
 
 | Date                | URL                   | Nombre de requêtes | Taille de la page (Ko) | Taille du DOM | GES (gCO2e) | Eau (cl) | EcoIndex | Note |
 |---------------------|-----------------------|--------------------|------------------------|---------------|-------------|----------|----------|------|
-| 10/06/2026 10:31:29 | http://localhost:3000/ | 1496 | 27  | 140  | 1.80  | 2.70 | 59.86 | C |
+| 10/06/2026 10:31:29 | http://localhost:3000/ | 1467 | 17512  | 140  | 2.10  | 3.15 | 44.99 | D |
 
 
 ## 3. Ecoindex.fr
@@ -55,3 +55,20 @@ Nb de requetes : 1465 requêtes
 - Regroupez les images dans un sprite
 - Regroupez certaines feuilles de styles (CSS) et bibliothèques Javascript (JS).
 - Préférez les pages statiques
+
+## Plan d'action
+
+Compresser les ressources du projet
+
+Redimensionner les images
+
+Limiter le nombre de requêtes HTTP de 1468 requêtes à moins de 40.
+
+Minifier le css et le js
+
+supprimer les scripts javascript inutiles
+
+limiter le nbre de fichier css
+
+Évitez les chaînes de requêtes critiques en réduisant la longueur des chaînes ou la taille de téléchargement des ressources, ou en reportant le téléchargement de ressources inutiles, afin d'améliorer le chargement des pages
+

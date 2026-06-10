@@ -44,3 +44,98 @@
 ...
 
 ---
+
+### Story 4 : Réduction du nombre de requêtes réseau
+
+**En tant que** utilisateur mobile,  
+**je veux que** l'application effectue moins de requêtes réseau lors du chargement  
+**afin de** réduire ma consommation de données et accélérer l'affichage.  
+
+- 🎯 Objectif : passer de 1467 à moins de 40 requêtes
+- 🧱 BP associée : mutualisation des ressources / suppression des appels inutiles
+- 🛠️ KPI : nombre de requêtes Lighthouse < 40
+
+--- 
+
+### Story 5 : Compression des ressources statiques
+
+**En tant que** utilisateur connecté avec un débit limité,  
+**je veux** que les fichiers JavaScript, CSS et JSON soient compressés avant transfert  
+**afin de** réduire le volume de données téléchargées.  
+
+- 🎯 Objectif : activer Brotli ou Gzip sur 100 % des ressources statiques
+- 🧱 BP associée : compression des ressources
+- 🛠️ KPI : taille totale transférée < 5 Mo
+
+
+### Story 6 : Réduction du JavaScript exécuté
+
+**En tant que** utilisateur du site,  
+**je veux** que seul le JavaScript nécessaire soit chargé et exécuté  
+**afin de** réduire le temps d'attente avant interaction.  
+
+- 🎯 Objectif : diminuer le TBT sous 200 ms
+- 🧱 BP associée : suppression du code inutile / tree-shaking
+- 🛠️ KPI : Total Blocking Time < 200 ms
+
+---
+
+### Story 7 : Chargement différé des composants
+
+**En tant que** visiteur,  
+**je veux** que les fonctionnalités secondaires soient chargées uniquement lorsque j'en ai besoin  
+**afin de** accélérer l'affichage initial de l'application.  
+
+- 🎯 Objectif : implémenter le lazy loading sur les pages secondaires
+- 🧱 BP associée : chargement à la demande
+- 🛠️ KPI : réduction de 50 % du bundle initial
+
+---
+
+### Story 8 : Réduction du poids du bundle React
+
+**En tant que** utilisateur,  
+**je veux** que l'application télécharge moins de code au démarrage  
+**afin de** limiter le temps de chargement et la consommation énergétique.  
+
+- 🎯 Objectif : bundle principal < 300 Ko compressé
+- 🧱 BP associée : optimisation des dépendances
+- 🛠️ KPI : taille du bundle analysée avec Webpack Bundle Analyzer
+
+---
+
+### Story 9 : Mise en cache des ressources
+
+**En tant que** utilisateur récurrent,  
+**je veux** que les ressources déjà téléchargées soient réutilisées lors de mes prochaines visites  
+**afin de** éviter des téléchargements inutiles.  
+
+- 🎯 Objectif : taux de cache supérieur à 90 %
+- 🧱 BP associée : cache navigateur
+- 🛠️ KPI : diminution du trafic réseau sur les visites répétées
+
+---
+
+###  Story 10 : Optimisation des appels API
+
+**En tant que** utilisateur,  
+**je veux** que seules les données nécessaires soient récupérées depuis le serveur  
+**afin de** réduire les échanges réseau inutiles.  
+
+- 🎯 Objectif : réduire de 80 % le volume des réponses API
+- 🧱 BP associée : sobriété des flux de données
+- 🛠️ KPI : taille moyenne des réponses API
+
+---
+
+###  Story 11 : Amélioration de l'EcoIndex
+
+**En tant que** responsable du produit,  
+**je veux** améliorer l'empreinte environnementale de l'application  
+**afin de** réduire son impact écologique.  
+
+- 🎯 Objectif : passer d'un EcoIndex D à B minimum
+- 🧱 BP associée : démarche globale d'éco-conception
+- 🛠️ KPI : EcoIndex > 65
+
+---
