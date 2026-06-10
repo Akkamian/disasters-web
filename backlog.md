@@ -139,3 +139,17 @@
 - 🛠️ KPI : EcoIndex > 65
 
 ---
+
+
+### Story 12 : Amélioration de la sobriété visuelle de l'application
+
+**En tant que** utilisateur récurrent,  
+**je veux** que les visuels du dashboard soient sobres et que les animations fassent moins mal aux yeux
+**afin de** économiser de la data sur mon forfait et de favoriser une application plus sobre et simple.
+
+- 🎯 Objectif : supprimer les animations visuelles inutiles
+- 🧱 BP associée : suppression d'animations js ou css lourdes et inutiles
+- 🛠️ KPI : temps de chargement de la page réduit de 90%
+
+---
+

@@ -2,9 +2,9 @@
 
 ## 1. Audit Lighthouse
 
-![alt text](image.png)
+![alt text](./src/assets/image.png)
 
-![alt text](image-2.png)
+![alt text](./src/assets/image-2.png)
 
 l'audit lighthouse met en lumière d'importants et nombreux problèmes de performances de l'application
 on repère également des axes de progrès concernant l'accessibilité et le SEO.
@@ -32,11 +32,11 @@ Actions de résolution possibles : execution javascript inutile.
 
 ## 3. Ecoindex.fr
 
-![alt text](image-3.png)
+![alt text](./src/assets/image-3.png)
 
-![alt text](image-4.png)
+![alt text](./src/assets/image-4.png)
 
-![alt text](image-5.png)
+![alt text](./src/assets/image-5.png)
 
 ### Page trop lourde et trop de requetes 
 Poids de la page : 3.526 Mo

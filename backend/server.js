@@ -51,6 +51,8 @@ app.use(
   })
 )
 
+
+
 // --- API server ---
 app.get('/api/server', (_, res) => {
   res.set('Cache-Control', 'no-store')
@@ -60,13 +62,6 @@ app.get('/api/server', (_, res) => {
     load: +os.loadavg()[0].toFixed(2),
     rps
   })
-})
-
-// --- API payload ---
-app.get('/api/payload', (_, res) => {
-  const block = 'x'.repeat(1_024)
-  const big = Array(1_024).fill(block)
-  res.json({ data: big, ts: Date.now() })
 })
 
 app.listen(PORT, () => console.log(`backend on :${PORT}`))
